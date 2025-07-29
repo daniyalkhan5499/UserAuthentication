@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen text-white">
+
+  <form action="/create" method="POST" class="bg-gray-800 p-6 rounded-lg shadow-lg w-80">
+    <h2 class="text-2xl font-bold mb-4 text-center">Register</h2>
+
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Name" 
+      class="w-full mb-3 px-4 py-2 rounded bg-gray-700 focus:outline-none" 
+      required
+    />
+
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Email" 
+      class="w-full mb-3 px-4 py-2 rounded bg-gray-700 focus:outline-none" 
+      required
+    />
+
+    <input 
+      type="password" 
+      name="password" 
+      placeholder="Password" 
+      class="w-full mb-4 px-4 py-2 rounded bg-gray-700 focus:outline-none" 
+      required
+    />
+
+    <button 
+      type="submit" 
+      class="w-full bg-yellow-500 text-black py-2 rounded hover:bg-yellow-400 transition"
+    >
+      Register
+    </button>
+  </form>
+
+</body>
+</html>
